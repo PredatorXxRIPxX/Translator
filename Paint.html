@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Paint.css">
+    <script src="https://kit.fontawesome.com/1b0e52345a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <title>Paint</title>
+</head>
+<body>
+    <section>
+        <div class="paint_tool" id="paint_tool">
+            <h4>Shapes</h4>
+            <button id="rectangle"class="fa-solid fa-triangle"></button>
+            <button id="square"class="fa-solid fa-square"></button>
+            <input type="checkbox" id="checkbox" value="fill color">
+            <h3>options</h3>
+            <h4 id="brush">Brush</h4>
+            <h4 id="reaser">Eraser</h4>
+            <input id="range" type="range" min="1" max="20" step="1">
+            <h3>Colors</h3>
+            <div class="color">
+                <div id="red" class="red"></div>
+                <div id="blue" class="blue"></div>
+                <div id="green" class="green"></div>
+                <div id="black" class="black"></div>
+            </div>
+            <button id="clear">Clear</button>
+            <button id="save">save as a picture</button>
+        </div>
+        <div class="main_paint">
+            <canvas id="canvas"></canvas>
+        </div>
+
+    </section>
+</body>
+</html>
+<script src="./Paint.js"></script>
